@@ -230,7 +230,9 @@
         <!-- Camera + cursor. -->
         <a-entity camera="userHeight: 1.6"
             universal-controls="movementControls: checkpoint"
-            checkpoint-controls="mode: animate">
+            checkpoint-controls="mode: animate"
+            look-controls=""
+            wasd-controls>
             <a-gui-cursor id="cursor"
                 raycaster="interval: 1000; objects: [gui-interactable], [checkpoint], [link]"
                 fuse="false" fuseTimeout="2000"
