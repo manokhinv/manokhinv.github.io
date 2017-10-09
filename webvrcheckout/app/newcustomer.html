@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebVR Checkout - New Customer</title>
+
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="evk+nW3Qgc4iWKjEsp7BICpf44J9/H0fT/4tbpggXnKDkTOXM1PPNbcZvx1JDQM2QvIf4jJuSl7O5DfWbKVm7g==">
+
+  <!-- CSS -->
+
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/vendor/reset.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/style.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/jquery-ui-1.8.13.custom.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/vendor/jquery.miniColors.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/dashboard.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/vendor/foundation_custom_dropdown.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/vendor/nv.d3.css">
+    <link rel="stylesheet" media="screen" href="https://sandbox.braintreegateway.com/stylesheets/vendor/uniform.default.css">
+    <link rel="stylesheet" media="print" href="https://sandbox.braintreegateway.com/assets/print-e507b554afa128af0b7011ca5515b394f557ce22c7d0ef919718962e0994b9db.css">
+
+	<!-- JS -->
+	<script src="https://sandbox.braintreegateway.com/assets/vendor/jquery-1.10.2.min-3b980a22cc7f1242cdc4eb4dc9fbdd7912920de0fac9d556369c02f85d2db918.js"></script>
+	<script>
+		//<![CDATA[
+			var jQuery_1_10_2 = $.noConflict(true);
+		//]]>
+	</script>
+    <script src="https://sandbox.braintreegateway.com/javascripts/gateway.js"></script>
+
+  <script>
+	(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for (g = 0; g < i.length; g++) f(c, i[g]);b._i.push([a, e, d])};b.__SV = 1.2;}})(document,window.mixpanel||[]);
+	
+	mixpanel.init('bdd3f0403f03ae96665a438dec526244', {autotrack: false});
+	mixpanel.init('99168128b81a29a7141340c058ce1b7f', {autotrack: false}, 'onboarding');
+	mixpanel.init('539f4132fec85ce346b6f7f99cb7614e', {autotrack: false, 'cross_subdomain_cookie': true, 'cookie_name': 'docs_mixpanel'}, 'docs_journey');
+	
+	var origin = window.location.protocol + '//' + window.location.host;
+	
+	
+	if (document.referrer === origin + '/login') {
+	  mixpanel.docs_journey.track('signed in');
+	
+		mixpanel.people.set({
+		  affiliation: 'merchant',
+		  email: 'ggorodovoj@gmail.com',
+		  name: 'WebVR Checkout',
+		  merchant_fk: '884768',
+		  public_id: 'h8s5vct2k9cjnmf9',
+		  paypal_email: '',
+		  company_name: 'RealityVirtuallyHackathon',
+		  roles: 'Account Admin'
+		});
+	
+		mixpanel.docs_journey.people.set({
+		  affiliation: 'merchant',
+		  email: 'ggorodovoj@gmail.com',
+		  has_made_successful_api_call: 'false',
+		  merchant_country: 'United States',
+		  merchant_fk: '884768',
+		  name: 'WebVR Checkout',
+		  public_id: 'h8s5vct2k9cjnmf9',
+		  vault_enabled: 'true',
+		  paypal_enabled: 'true',
+		  recurring_billing_enabled: 'true'
+		});
+	
+		mixpanel.identify('h8s5vct2k9cjnmf9');
+		mixpanel.onboarding.identify('h8s5vct2k9cjnmf9');
+		mixpanel.docs_journey.identify('h8s5vct2k9cjnmf9');
+	
+		mixpanel.register({user_id: 'h8s5vct2k9cjnmf9'});
+		mixpanel.onboarding.register({user_id: 'h8s5vct2k9cjnmf9'});
+	}
+	
+	mixpanel.track('pageview', {
+	  section: 'New Customer'
+	});
+	
+	$(document).on('click', '[data-track]', function (event) {
+	  mixpanel.track(event.target.getAttribute('data-track'));
+	});
+	
+	$(document).on('click', '[data-track-journey]', function (event) {
+	  var data = {};
+		data.origin = 'b_sandbox'
+	
+	   mixpanel.docs_journey.track(event.target.getAttribute('data-track-journey'), data);
+	});
+	</script>
+
+
+
+    <script>
+		//<![CDATA[
+		
+			  $(document).ready(function() {
+				new PurgeSandboxDataForm().setup();
+			  });
+		
+		//]]>
+	</script>
+</head>
+<body>
+    <div class="content_wrap-inner">
+        <script>
+		//<![CDATA[
+		  $(document).ready(function() {
+			new CustomerForm().setup();
+		  });
+		
+		//]]>
+	</script>
+  <script src="https://assets.braintreegateway.com/v1/braintree-data.js"></script>
+  <script>
+		//<![CDATA[
+			$(document).ready(function() {
+			  window.BraintreeData && BraintreeData.setup('gwjxmtqmsc26wjff', 'customer_form',
+			  BraintreeData.environments.sandbox);
+			});
+		
+		//]]>
+</script>
+
+<header class="header_group">
+  <h2>New Customer</h2>
+</header>
+
+
+
+<form class="no_autocomplete standard" id="customer_form" action="https://sandbox.braintreegateway.com/merchants/gwjxmtqmsc26wjff/customers" accept-charset="UTF-8" method="post" autocomplete="off"><div style="margin:0;padding:0;display:none"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="evk+nW3Qgc4iWKjEsp7BICpf44J9/H0fT/4tbpggXnKDkTOXM1PPNbcZvx1JDQM2QvIf4jJuSl7O5DfWbKVm7g=="></div>  <div class="block">
+    <h3>Customer Details</h3>
+    
+    <ul class="form-block">
+      <li class="third"><div id="customer_first_name_container" class="input first"><label for="customer_first_name">First name</label><input type="text" name="customer[first_name]" id="customer_first_name"></div></li>
+      <li class="third"><div id="customer_last_name_container" class="input"><label for="customer_last_name">Last name</label><input type="text" name="customer[last_name]" id="customer_last_name"></div></li>
+      <li class="third"><div id="customer_company_container" class="input"><label for="customer_company">Company</label><input type="text" name="customer[company]" id="customer_company"></div></li>
+      <li class="third"><div id="customer_email_container" class="input"><label for="customer_email">Email</label><input type="text" name="customer[email]" id="customer_email"></div></li>
+      <li class="third"><div id="customer_phone_container" class="input"><label for="customer_phone">Phone</label><input type="text" name="customer[phone]" id="customer_phone"></div></li>
+      <li class="third"><div id="customer_fax_container" class="input"><label for="customer_fax">Fax</label><input type="text" name="customer[fax]" id="customer_fax"></div></li>
+      <li class="third"><div id="customer_website_container" class="input"><label for="customer_website">Website</label><input type="text" name="customer[website]" id="customer_website"></div></li>
+      <li class="third">
+        <div id="customer_id_container" class="input"><label for="customer_id">Customer ID</label><input type="text" name="customer[id]" id="customer_id"></div>
+        <div class="help">A random ID will be generated for you if you leave this blank.</div>
+      </li>
+    </ul>
+  </div>
+
+
+  <div class="block">
+    <h3>Payment Method Details</h3>
+    <div class="radio-toggle">
+      <input id="toggleable_payment_method_present_false" type="radio" value="false" name="customer[payment_method_present]">
+      <span class="radio-span">Without Payment Method</span>
+    </div>
+    <div class="radio-toggle">
+      <input id="toggleable_payment_method_present_true" type="radio" value="true" checked="checked" name="customer[payment_method_present]">
+      <span class="radio-span">With Payment Method</span>
+    </div>
+  </div>
+
+  <div id="payment_method_details">
+    
+      <div class="block">
+  <h3>Payment Method Details</h3>
+
+<ul class="form-block">
+  <li class="third"><div id="customer_credit_card_cardholder_name_container" class="input first"><label for="customer_credit_card_cardholder_name">Cardholder Name</label><input type="text" name="customer[credit_card][cardholder_name]" id="customer_credit_card_cardholder_name"></div></li>
+  <li class="third"><div id="customer_credit_card_number_container" class="input"><label for="customer_credit_card_number">Credit Card Number</label><input class="credit_card_number" type="text" name="customer[credit_card][number]" id="customer_credit_card_number"><span class="required">required</span></div></li>
+  <li></li>
+  <li class="third"><div id="customer_credit_card_expiration_date_container" class="input"><label for="customer_credit_card_expiration_date">Expiration Date (MM/YYYY)</label><input class="credit_card_expiration_date" type="text" name="customer[credit_card][expiration_date]" id="customer_credit_card_expiration_date"><span class="required">required</span></div></li>
+  <li class="third"><div id="customer_credit_card_token_container" class="input"><label for="customer_credit_card_token">Payment Method Token</label><input type="text" name="customer[credit_card][token]" id="customer_credit_card_token"></div></li>
+  <li class="third">
+  </li>
+  <li class="third info"><div id="customer_credit_card_options_verify_card_container" class="input checkbox"><input name="customer[credit_card][options][verify_card]" type="hidden" value="0"><input class="credit_card_options_verify_card" type="checkbox" value="1" name="customer[credit_card][options][verify_card]" id="customer_credit_card_options_verify_card"><label for="customer_credit_card_options_verify_card">Verify card</label><img alt="If Verify Card is run, the credit card is verified by performing a $0 or $1 transaction, which is automatically voided. The card is verified to be an open valid account that passes the AVS and CVV reject rules configured." class="info" src="/images/icons/question.gif"><div class="help" style="display:none">If Verify Card is run, the credit card is verified by performing a $0 or $1 transaction, which is automatically voided. The card is verified to be an open valid account that passes the AVS and CVV reject rules configured.</div></div></li>
+  <li class="third"><div id="customer_credit_card_cvv_container" class="input credit_card_cvv_container" style="display: none;"><label for="customer_credit_card_cvv">Card Verification Value (CVV)</label><input type="text" name="customer[credit_card][cvv]" id="customer_credit_card_cvv"></div></li>
+  <li class="third">
+    <div id="customer_credit_card_options_verification_merchant_account_id_container" class="input verification_merchant_account_id_container" style="display: none;"><label for="customer_credit_card_options_verification_merchant_account_id">Merchant Account</label><div class="labelled_text">realityvirtuallyhackathon</div><input value="realityvirtuallyhackathon" type="hidden" name="customer[credit_card][options][verification_merchant_account_id]" id="customer_credit_card_options_verification_merchant_account_id"></div>
+  </li>
+
+</ul>
+
+	<script>
+    //<![CDATA[
+      $(document).ready(function() {
+        new CreditCardBillingAddressForm().setup();
+      });
+    
+    //]]>
+    </script>
+<h3>Billing Address</h3>
+
+<div id="billing_address_fields">
+  <div class="help toggle-help-for-avs" style="display: none;">The billing address will be used for Address Verification (AVS)</div>
+
+    <div class="radio-toggle">
+      <input class="address_source_option" id="toggleable_address_source_none" type="radio" value="none" checked="checked" name="customer[credit_card][billing_address_source]">
+      <span class="radio-span">None</span>
+    </div>
+
+    <div class="toggleable_address_none">
+      <input value="" type="hidden" name="customer[credit_card][billing_address]" id="customer_credit_card_billing_address">    </div>
+
+
+    <div class="radio-toggle">
+      <input class="address_source_option" id="toggleable_address_source_new" type="radio" value="new" name="customer[credit_card][billing_address_source]">
+      <span class="radio-span">Create a New Address</span>
+    </div>
+
+    <div class="toggleable_address_fields custom-select-block" style="display: none;">
+      
+        <ul class="form-block">
+          <li class="third"><div id="customer_credit_card_billing_address_first_name_container" class="input"><label for="customer_credit_card_billing_address_first_name">First Name</label><input type="text" name="customer[credit_card][billing_address][first_name]" id="customer_credit_card_billing_address_first_name" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_last_name_container" class="input"><label for="customer_credit_card_billing_address_last_name">Last Name</label><input type="text" name="customer[credit_card][billing_address][last_name]" id="customer_credit_card_billing_address_last_name" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_company_container" class="input"><label for="customer_credit_card_billing_address_company">Company</label><input type="text" name="customer[credit_card][billing_address][company]" id="customer_credit_card_billing_address_company" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_street_address_container" class="input first"><label for="customer_credit_card_billing_address_street_address">Street Address</label><input type="text" name="customer[credit_card][billing_address][street_address]" id="customer_credit_card_billing_address_street_address" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_extended_address_container" class="input"><label for="customer_credit_card_billing_address_extended_address">Extended Address</label><input type="text" name="customer[credit_card][billing_address][extended_address]" id="customer_credit_card_billing_address_extended_address" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_locality_container" class="input"><label for="customer_credit_card_billing_address_locality">City (Locality)</label><input type="text" name="customer[credit_card][billing_address][locality]" id="customer_credit_card_billing_address_locality" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_region_container" class="input"><label for="customer_credit_card_billing_address_region">State/Province (Region)</label><input type="text" name="customer[credit_card][billing_address][region]" id="customer_credit_card_billing_address_region" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_postal_code_container" class="input"><label for="customer_credit_card_billing_address_postal_code">Postal Code</label><input type="text" name="customer[credit_card][billing_address][postal_code]" id="customer_credit_card_billing_address_postal_code" disabled="disabled"></div></li>
+<li class="third"><div id="customer_credit_card_billing_address_country_name_container" class="input"><label for="customer_credit_card_billing_address_country_name">Country Name</label><div class="selector" id="uniform-customer_credit_card_billing_address_country_name" style="width: 460px;"><span style="width: 460px; user-select: none;">Please Select Your Country</span><input name="customer[credit_card][billing_address][country_name]" id="customer_credit_card_billing_address_country_name" value="United States of America"></div></div></li>
+
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+  </div>
+
+  <p class="footer-nav">
+    <input type="submit" name="commit" value="Create Customer" data-disable-with="Please wait..." class="btn btn_primary" id="customer_submit">
+  </p>
+
+<input type="hidden" name="device_data" id="device_data" value="{&quot;device_session_id&quot;:&quot;3ade3edb1e2ea9d3409dc70b01bd6a5e&quot;,&quot;fraud_merchant_id&quot;:&quot;600000&quot;,&quot;correlation_id&quot;:&quot;aa67888623a267d0662cacb35e2e26bd&quot;}"></form>
+      </div>
+</body>
+</html>
