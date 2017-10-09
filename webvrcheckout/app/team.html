@@ -35,10 +35,10 @@
 </head>
 
 <body>
-    <a-scene physics="debug:false; friction: 0.1; restitution: 0.75">
+    <a-scene physics="debug:false; friction: 0.1; restitution: 0.75" auto-enter-vr>
         <a-assets>
             <img id="teamThumbnail" src="assets/team.jpg">
-            <img id="6dofThumbnail" src="assets/roomscale.png">
+            <img id="6dofThumbnail" src="assets/roomscale2.png">
         </a-assets>
 
         <a-entity link="href: index.html; title: Roomscale Store; image: #6dofThumbnail"
@@ -57,7 +57,7 @@
             wasd-controls>
             <a-gui-cursor id="cursor"
                 raycaster="interval: 1000; objects: [gui-interactable], [checkpoint], [link]"
-                fuse="true" fuseTimeout="2000"
+                fuse="true" fuseTimeout="1000"
                 design="dot"
             >
             </a-gui-cursor> <!-- /cursor -->

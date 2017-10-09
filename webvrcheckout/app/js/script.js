@@ -10,6 +10,11 @@ var showcheckoutmenu = function() {
     menu.setAttribute('visible','true');
 };
 
+AFRAME.registerComponent('auto-enter-vr', {
+  init: function () {
+    this.el.sceneEl.enterVR();
+  }
+});
 
 AFRAME.registerComponent('product', {
     schema: {
