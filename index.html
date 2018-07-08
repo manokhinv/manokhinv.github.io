@@ -64,17 +64,6 @@
     <!--<script type="text/javascript" src="https://raw.githubusercontent.com/caseyscarborough/github-activity/master/src/github-activity.js"></script>-->
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-		$(document).ready(function() {
-			var widget = SC.Widget(document.getElementById('sc_widget'));
-			widget.bind(SC.Widget.Events.READY, function() {
-				console.log('Ready...');
-			});
-			$('#sc').click(function() {
-				widget.toggle();
-			});
-		});
-	</script>
 </head> 
 
 <body>
@@ -99,7 +88,7 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I am Vadim, an App Dev by day and an MSBA student by night at <a href="http://bab.sn/msba" target="_blank">Babson</a>. I am passionate about engineering, analytics, innovation, investments, and all things technology. I have a degree in Comp Sci and Applied Math from <a href="http://wit.edu" target="_blank">WIT</a>. I constantly strive to pair up my technical background with an entrepreneurial mindset to build something <a href="./25" class="undotted-link" style="color:#49515a">awe</a>some. Outside of my day to day duties I ride my bike, write and play <a id="sc" href="#">music</a>, read about FI/RE and investing, and generally try to expand my <a href="https://i.pinimg.com/736x/05/d9/50/05d950ac03dffd4a9fdac537c08206ab--kapitán-jack-captain-jack.jpg" class="undotted-link" style="color:#49515a">horizons</a>.</p>
+                            <p>I am Vadim, an App Dev by day and an MSBA student by night at <a href="http://bab.sn/msba" target="_blank">Babson</a>. I am passionate about engineering, analytics, innovation, investments, and all things technology. I have a degree in Comp Sci and Applied Math from <a href="http://wit.edu" target="_blank">WIT</a>. I constantly strive to pair up my technical background with an entrepreneurial mindset to build something <a href="./25" class="undotted-link" style="color:#49515a">awe</a>some. Outside of my day to day duties I ride my bike, write and play <a class="sc">music</a>, read about FI/RE and investing, and generally try to expand my <a href="https://i.pinimg.com/736x/05/d9/50/05d950ac03dffd4a9fdac537c08206ab--kapitán-jack-captain-jack.jpg" class="undotted-link" style="color:#49515a">horizons</a>.</p>
                         </div>
                     </div>                
                 </section>
@@ -235,6 +224,14 @@
 				}
 			}*/
 		}();
+		
+		$(document).ready(function() {
+			var widget = SC.Widget(document.getElementById('sc_widget'));
+			widget.bind(SC.Widget.Events.READY, function() {});
+			$('.sc').click(function() {
+				widget.toggle();
+			});
+		});
 		
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
