@@ -86,7 +86,7 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I am Vadim, an App Dev by day and an MSBA student by night at <a href="http://bab.sn/msba" target="_blank">Babson</a>. I am passionate about engineering, analytics, innovation, investments, and all things technology. I have a degree in Comp Sci and Applied Math from <a href="http://wit.edu" target="_blank">WIT</a>. I constantly strive to pair up my technical background with an entrepreneurial mindset to build something <a href="./25" class="undotted-link" style="color:#49515a">awe</a>some. Outside of my day to day duties I ride my bike, write and play <a id="sc" href="https://w.soundcloud.com/player/?secret_token=s-uRVsi&url=https://api.soundcloud.com/tracks/12810" target="_blank">music</a>, read about FI/RE and investing, and generally try to expand my <a href="https://i.pinimg.com/736x/05/d9/50/05d950ac03dffd4a9fdac537c08206ab--kapitán-jack-captain-jack.jpg" class="undotted-link" style="color:#49515a">horizons</a>.</p>
+                            <p>I am Vadim, an App Dev by day and an MSBA student by night at <a href="http://bab.sn/msba" target="_blank">Babson</a>. I am passionate about engineering, analytics, innovation, investments, and all things technology. I have a degree in Comp Sci and Applied Math from <a href="http://wit.edu" target="_blank">WIT</a>. I constantly strive to pair up my technical background with an entrepreneurial mindset to build something <a href="./25" class="undotted-link" style="color:#49515a">awe</a>some. Outside of my day to day duties I ride my bike, write and play <a id="sc" href="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/12810" target="_blank">music</a>, read about FI/RE and investing, and generally try to expand my <a href="https://i.pinimg.com/736x/05/d9/50/05d950ac03dffd4a9fdac537c08206ab--kapitán-jack-captain-jack.jpg" class="undotted-link" style="color:#49515a">horizons</a>.</p>
                         </div>
                     </div>                
                 </section>
@@ -212,8 +212,8 @@
     </footer>  
 	<script type="text/javascript">
 		!function(){
-			Array.prototype.sample = function(){return this[Math.floor(Math.random()*this.length)];};
-			document.getElementById('sc').href+=[8639,8242,6485,4603,4473,2268].sample();
+			var r = Math.floor(Math.random()*6), tn = [8639,8242,6485,4603,4473,2268], st = ['219BE','O39hp','uRVsi','zHczG','Gore6','N5Uqh'];
+			document.getElementById('sc').href+= tn[r] + '&secret_token=s-' + st[r]; 
 			document.getElementById('mf').src='https://i.imgur.com/'+(window.location.href.search('SnWggQF')>0?'SnWggQF':'8lFwld7')+'.jpg';
 			/*if(document.body.clientWidth < 1200) {
 				for(i in document.getElementsByClassName('level-label')) {
