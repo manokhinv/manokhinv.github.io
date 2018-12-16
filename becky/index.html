@@ -20,12 +20,12 @@
 			$('#music_control').click(function() {
 				widget.toggle();
 			});
-			widget.toggle();
+			SC.Widget(document.getElementById('soundcloud_widget')).toggle();
 		});
     </script>
 	<script type="text/javascript" language="javascript" src="assets/effects.js"></script>
 </head>
-<body>
+<body onLoad="javascript: SC.Widget(document.getElementById('soundcloud_widget')).toggle();">
     <div class="container_main">
         <img src="assets/img/Balloon-Border.png" alt="bb1" width="100%" class="balloon-border" />
         <img src="assets/img/Balloon-Border.png" alt="bb2" width="100%" class="balloon-border2" />
@@ -41,7 +41,7 @@
             <div class="balloons text-center" id="b5"></div>
             <div class="balloons text-center" id="b6"></div>
             <div class="balloons text-center" id="b7"></div>
-			<div id="photo" align="center" style="padding-top:110px;"><img style="border-radius: 70px;width:40%;" src="assets/img/IMG_0480.JPG" alt="becca" /></div>
+			<div id="photo" align="center" style="padding-top:110px;"><img style="border-radius: 70px;width:150px;" src="assets/img/IMG_0480.JPG" alt="becca" /></div>
             <div id="neon_container">
                 <p><a id="tt" href="#a">IT'S&nbsp;&nbsp;&nbsp;BECKY'S&nbsp;&nbsp;&nbsp;BIRTHDAY!<br /><br />&#x21CA;&#x21CA;&#x21CA;</a><br /></p>
             </div>
@@ -111,8 +111,8 @@
                     </div>-->
                     <div>
                         <h4><br />&#x1f382</h4>
-                        <h3>A Quick Shout Out From Snowy Siberia</h3>
-                        <div id="pozdr3" align="center"><iframe src="https://drive.google.com/file/d/0ByOApOtnxc3eOVh0blgwdlZDV0F2Sm4xWThDV2pTbXo4VGhn/view?t=2s" width="840" height="480"></iframe></div>
+                        <h3>A Quick Message From Snowy Siberia</h3><br />
+                        <div id="pozdr3" align="center"><iframe src="https://drive.google.com/file/d/1kJckBeMjKIfdeDKkQYzfDIv70XU6IzdA/preview" width="840" height="480"></iframe></div>
                     </div>	
                 <h4><br />&#x1f382<br /></h4>
                 <h2 id="toggle">In all seriousness, however, I thought that<br />
