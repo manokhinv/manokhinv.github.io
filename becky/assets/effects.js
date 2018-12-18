@@ -152,5 +152,4 @@ $(function(){
 	loopFive();
 	loopSix();
 	loopSeven();
-	loopEight();
 }); 

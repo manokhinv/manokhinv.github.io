@@ -20,12 +20,22 @@
 			$('#music_control').click(function() {
 				widget.toggle();
 			});
+			$('.overlay').click(function() {
+				$('.overlay').hide().off();
+				widget.toggle();
+				$("#music_control").html() == "Pause Music" 
+					? $("#music_control").html("Play Music") 
+					: $("#music_control").html("Pause Music"); 
+			});
 		});
     </script>
 	<script type="text/javascript" language="javascript" src="assets/effects.js"></script>
 </head>
 <body>
     <div class="container_main">
+    	<div class="overlay">
+  			<div class="button">MAKE SURE THE SOUND IS ON<br /><br />&#9658;</div>
+        </div>
         <img src="assets/img/Balloon-Border.png" alt="bb1" width="100%" class="balloon-border" />
         <img src="assets/img/Balloon-Border.png" alt="bb2" width="100%" class="balloon-border2" />
         <div id="top_container"></div>
@@ -76,7 +86,7 @@
                 <h2>Glad you made it out of the <a href="https://en.wikipedia.org/wiki/27_Club" target="	_blank">Forever 27 Club</a>!<br /><br />
                 I don't think you would've liked the music there...<br /></h2>
                 <h4><br />&#x1f382</h4>
-                <h3><a href="https://translate.google.com/ru/en/Rebekke dvadtsat' vosem' yeyo o vozraste ne sprosim!" target="_blank">Ребекке двадцать восемь её о возрасте не спросим!</a><br /><br /></h3>
+                <h3><a href="https://translate.google.com/#auto/en/Rebekke dvadtsat' vosem' yeyo o vozraste ne sprosim!" target="_blank">Ребекке двадцать восемь её о возрасте не спросим!</a><br /><br /></h3>
                 <h4><br />&#x1f382</h4>
                 <h3>Forget about the past - you can't change it!<br /><br />
                 Forget about the future - you can't predict it!<br /><br />
@@ -84,8 +94,9 @@
                 <h4><br />&#x1f382</h4>
                     <div>
                         <h4><br />&#x1f382</h4>
-                        <h3>A Quick Message From Snowy Siberia</h3><br />
+                        <h3>&#10052; &#10052; &#10052; And Now A Quick Message From Snowy Siberia </h3><br />
                         <div id="pozdr3" align="center"><iframe src="https://drive.google.com/file/d/1kJckBeMjKIfdeDKkQYzfDIv70XU6IzdA/preview" width="840" height="480"></iframe></div>
+                        <h4><br />Translation: <a href="https://translate.google.com/#auto/en/S Dnem Rozhdeniya!" target="_blank">"HAP-PY BIRTH-DAY!"</a></h4>
                     </div>
                 <h4><br />&#x1f382<br /></h4>
                 <h2 id="toggle">In all seriousness, however, I thought that<br />

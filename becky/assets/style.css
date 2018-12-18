@@ -45,6 +45,26 @@ h4 {
 	color: #f97c49;
 }
 
+.overlay {
+	background: rgba(0, 0, 0, .9);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.button {
+	margin: 200px auto 0;
+	padding: 30px;
+	width: 270px;
+	text-align: center;
+ 	color: white;
+ 	border: solid 2px white;
+}
+
 #music_control-container, #go-to-top, #shameless, #animation_control-container {
 	margin: 8px; 
 	position: fixed; 
