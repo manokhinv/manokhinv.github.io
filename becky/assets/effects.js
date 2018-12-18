@@ -2,6 +2,7 @@ function change_cat(i) {
 	var random_cats = ['i.imgur.com/JwbRHOy.gif','media0.giphy.com/media/PdKTOwHgOASGY/giphy.gif?cid=3640f6095c16c038446b4c5655ab9d1d','rs240.pbsrc.com/albums/ff237/mareesme/Funny%20cats%20and%20dogs%20and%20wildlife/cats38.gif~c200','media.giphy.com/media/Za7KwK4AMeFq/giphy.gif','rs707.pbsrc.com/albums/ww74/onesuleman/miscellaneous_121.gif~c200'];
 	var j = Math.ceil(Math.random() * (random_cats.length-1));
 	document.getElementById(i).src = 'https://' + random_cats[j];
+	document.getElementById(i).style = '';
 }
 	
 function change_font() {
