@@ -8,12 +8,12 @@ function change_cat(i) {
 function change_font() {
 	var obj = document.getElementById('tt');
 	var fonts = [[],
-		['Monoton','#FFFFFF','74',"IT'S&nbsp;&nbsp;&nbsp;BECKY'S&nbsp;&nbsp;&nbsp;BIRTHDAY!<br /><br />&#x21CA;&#x21CA;&#x21CA;"],
-		['Iceland','#228DFF','72',"HAPPY CAKEDAY ~~BECKYYY~~!<br /><br />&#x21CA;&#x21CA;&#x21CA;"],
+		['Monoton','#FFFFFF','74',"IT'S&nbsp;&nbsp;&nbsp;NATHALIA'S&nbsp;&nbsp;&nbsp;BIRTHDAY!<br /><br />&#x21CA;&#x21CA;&#x21CA;"],
+		['Iceland','#228DFF','72',"HAPPY CAKEDAY ~~NATHALIA~~!<br /><br />&#x21CA;&#x21CA;&#x21CA;"],
 		['Pacifico','#FFDD1B','72',"S Dnem Rozhdeniya!<br /><br />&#x21CA;&#x21CA;&#x21CA;"],
-		['PressStart','#B6FF00','72',"Just an 18 yo w/ 10y of EXP adulting!<br />&#x21CA;&#x21CA;&#x21CA;"],
+		['PressStart','#B6FF00','72',"Just an 18 yo w/ 6y of EXP adulting!<br />&#x21CA;&#x21CA;&#x21CA;"],
 		['Audiowide','#FF9900','68',"IT'S ALL 'BOUT DIS GAL T'DAY!<div style='font-size:0.2em;'>[and every day]</div>&#x21CA;&#x21CA;&#x21CA;"],
-		['Vampiro One','#BA01FF','54',"Becky's Turning 28, Time To Take Her On A Date!<br /><br />&#x21CA;&#x21CA;&#x21CA;"]
+		['Vampiro One','#BA01FF','54',"Nathalia's Turning 24, Happy Girl That We Adore!<br /><br />&#x21CA;&#x21CA;&#x21CA;"]
 	];
 	var j = Math.ceil(Math.random() * (fonts.length-1));
 	var str = 'neon' + j + ' 1s ease-in-out infinite alternate';
