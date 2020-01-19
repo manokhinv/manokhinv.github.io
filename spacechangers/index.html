@@ -4,9 +4,11 @@
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-assets>
             <a-asset-item id="wall" src="/assets/brick-wall-white.gltf"></a-asset-item>
+            <a-asset-item id="modelwall" src="/assets/modern-wall.glb"></a-asset-item>
           </a-assets>
           <!-- use your gltf model -->
-          <a-entity gltf-model="##wall"></a-entity>
-		<a-marker-camera preset='hiro'></a-marker-camera>
+          <a-entity gltf-model="#wall"></a-entity>
+          <a-entity gltf-model="#modelwall"></a-entity>
+		<a-marker-camera type='pattern' url='/assets/spacechangers.patt'></a-marker-camera>
 	</a-scene>
 </body>
