@@ -6,10 +6,12 @@
             <a-asset-item id="model2" src="assets/model2-scaled.glb"></a-asset-item>
           </a-assets>
           <!-- use your gltf model -->
-          <a-entity gltf-model="#model2"></a-entity>
+          
           <!--<a-entity gltf-model="#modelwall"></a-entity>-->
         <!--<a-marker-camera type='hiro'></a-marker-camera>-->
         
-		<a-marker-camera type='pattern' url='assets/marker.patt'></a-marker-camera>
+        <a-marker-camera preset='hiro'>
+            <a-entity gltf-model="#model2"></a-entity>
+        </a-marker-camera>
 	</a-scene>
 </body>
