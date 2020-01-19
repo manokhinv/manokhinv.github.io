@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-capable" />
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.12.3/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webvr-polyfill@latest/build/webvr-polyfill.js"></script>
     <!--build:css css/styles.min.css-->
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
@@ -351,7 +352,34 @@
     </a-scene>
 </body>
 <script type="text/javascript">
+window.onload = function () {
 
+// Check if is IOS 13 when page loads.
+if ( window.DeviceMotionEvent && typeof window.DeviceMotionEvent.requestPermission === 'function' ){
+
+    // Everything here is just a lazy banner. You can do the banner your way.
+    const banner = document.createElement('div');
+    banner.innerHTML = '<div style="z-index: 1; position: absolute; width: 100%; background-color:#000; color: #fff"><p style="padding: 10px">Click here to enable DeviceMotion</p></div>';
+    banner.onclick = ClickRequestDeviceMotionEvent ;// You NEED to bind the function into a onClick event. An artificial 'onClick' will NOT work.
+    document.querySelector('body').appendChild(banner);
+}
+}
+
+function ClickRequestDeviceMotionEvent () {
+window.DeviceMotionEvent.requestPermission()
+  .then(response => {
+    if (response === 'granted') {
+      window.addEventListener('devicemotion',
+        () => { console.log('DeviceMotion permissions granted.') },
+        (e) => { throw e }
+    )} else {
+      console.log('DeviceMotion permissions not granted.');
+    }
+  })
+  .catch(e => {
+    console.error(e);
+  })
+}
 
 let current_slide_number = 0;
 let number_of_slides = 4;
