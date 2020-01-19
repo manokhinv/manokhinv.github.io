@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html>
-
-
 <head>
     <meta charset="utf-8">
     <title>SpaceChangers Demo</title>
     <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 </head>
-<body style='margin : 0px; overflow: hidden;'>
+<body style='margin : 10px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-assets timeout="60000">
+            <a-asset-item id="model1" src="assets/model1.glb" ></a-asset-item>
+            <a-asset-item id="model2" src="assets/model2.glb" ></a-asset-item>
             <a-asset-item id="model3" src="assets/model3.glb" ></a-asset-item>
             <a-asset-item id="hack-sign" src="assets/MIT_Reality_Hack_Sign_Model_8.glb" ></a-asset-item>
           </a-assets>
-          <!-- use your gltf model -->
-          
-          <!--<a-entity gltf-model="#modelwall"></a-entity>-->
-        <!--<a-marker-camera type='hiro'></a-marker-camera>-->
-        <a-marker type='pattern' url='assets/spacechangers.patt'>
-            <a-entity gltf-model="#model1"></a-entity>
-        </a-marker>
 
         <a-marker preset='hiro'>
-            <a-entity gltf-model="#model3" rotation="0 0 0 "></a-entity>
+            <a-entity id="entity1" gltf-model="#model1" rotation="-50 0 0"></a-entity>
+
+            <a-entity id="entity2" gltf-model="#model2" rotation="-50 0 0" visible="false"></a-entity>
+
+            <a-entity id="entity3" gltf-model="#model3" rotation="-50 0 0" visible="false"></a-entity>
         </a-marker>
 
         <a-marker preset='kanji'>
-            <a-entity gltf-model="#hack-sign" scale="3 3 3" rotation="180 0 210 " position="0 0 0"></a-entity>
+            <a-entity gltf-model="#hack-sign" scale="3 3 3" rotation="180 0 210" position="0 0 0"></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
-	</a-scene>
+    </a-scene>
+
+    <div id="text">
+        <h1>SpaceChangers Demo</h1>
+      
+        <p>
+            Download and print <a href="assets/hiro_marker.jpeg" target="_blank">Hiro</a> or <a href="assets/hiro_marker.jpeg" target="_blank">Kanji</a> markers or display them on another screen
+        </p>
+        <p>    
+            <button id="btn_next">Next Hiro Rendering</button>
+        </p>
+      </div>
+      <script>
+        function nextfn() {
+            var e1 = document.getElementById('entity1');
+            var e2 = document.getElementById('entity2');
+            var e3 = document.getElementById('entity3');
+            if(e1.getAttribute('visible')) {
+                e1.setAttribute('visible', false);
+                e2.setAttribute('visible', true);
+                e3.setAttribute('visible', false);
+            } else if(e2.getAttribute('visible')) {
+                e1.setAttribute('visible', false);
+                e2.setAttribute('visible', false);
+                e3.setAttribute('visible', true);
+            } else if(e3.getAttribute('visible')) {
+                e1.setAttribute('visible', true);
+                e2.setAttribute('visible', false);
+                e3.setAttribute('visible', false);
+            } 
+        }
+        document.getElementById('btn_next').onclick = nextfn;
+      </script>
+      <style>
+          div#text {
+  position: absolute;
+  left: 6px; 
+  top: 6px;
+  padding: 6px;
+  /*
+  text-shadow: 0 0 5px white;
+  */
+  max-width: 350px;
+  background-color: rgba(255, 255, 255, 0.7)
+}
+      </style>
 </body>
+</html>
